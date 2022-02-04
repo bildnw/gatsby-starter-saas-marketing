@@ -1,4 +1,5 @@
 import React from "react"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import styled from "styled-components"
 
 import { Container, Section } from "../global"
@@ -7,7 +8,9 @@ const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <AnchorLink href="#top" style={{textDecoration: 'inherit'}}>
+        <TryItButton>Get early access</TryItButton>
+      </AnchorLink>
       <Subtitle>No credit card required.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
@@ -21,6 +24,7 @@ const StyledSection = styled(Section)`
 `
 
 const GetStartedContainer = styled(Container)`
+  color: ${props => props.theme.color.secondary};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +56,7 @@ const TryItButton = styled.button`
   border-color: initial;
   border-image: initial;
   outline: 0px;
+
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
   }

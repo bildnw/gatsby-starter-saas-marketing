@@ -9,14 +9,14 @@ const Footer = () => (
       <FooterColumn>
         <span>Features</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>How it works</li>
+          <li>Compare</li>
         </ul>
       </FooterColumn>
       <FooterColumn>
         <span>Resources</span>
         <ul>
-          <li>Compare</li>
+          <li>FAQ</li>
           <li>Blog</li>
         </ul>
       </FooterColumn>
@@ -31,12 +31,12 @@ const Footer = () => (
         <span>Social</span>
         <ul>
           <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li>Twitter</li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>bildnw</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
@@ -86,7 +86,7 @@ const FooterColumn = styled.div`
   span {
     font-size: 16px;
     font-family: ${props => props.theme.font.bold};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.secondary};
   }
   ul {
     list-style: none;
