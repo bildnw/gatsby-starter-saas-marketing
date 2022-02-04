@@ -8,7 +8,7 @@ import { Container } from "../global"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(sourceInstanceName: { eq: "product" }, name: { eq: "green-skew" }) {
+      file(sourceInstanceName: { eq: "product" }, name: { eq: "excavator" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -27,14 +27,14 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>MSME Finance</Subtitle>
             <h1>
-              All your money,
+              Build now.
               <br />
-              one account
+              Pay later. 
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
+              We're building next-generation finance tools for the construction sector. Sign up to
               get early access.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
@@ -43,7 +43,7 @@ const Header = () => {
             </HeaderForm>
             <FormSubtitle>
               Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
+              <FormSubtitleLink to="https://bildnw.joinportal.com/">Sign in</FormSubtitleLink>
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
@@ -59,7 +59,7 @@ const Header = () => {
 export default Header
 
 const HeaderWrapper = styled.header`
-  background-color: #f8f8f8;
+  background-color: #00D6C2;
   padding: 160px 0 80px 0;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));

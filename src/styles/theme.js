@@ -19,19 +19,24 @@ const theme = {
     regular: "font-size: 22px; line-height: 30px;",
     large: "font-size: 28px; line-height: 30px;",
     larger: "font-size: 40px; line-height: 50px;",
-    xlarge: "font-size: 48px; line-height: 48px;",
+    xlarge: "font-size: 64px; line-height: 64px;",
   },
 
   color: {
-    primary: "#071435",
+    // primary: "#071435",
     secondary: "#098c8c",
-    accent: "#cca86e",
+    // primary: "#00D6C2",
+    primary: "#EFF7FF",
+    // secondary: "#EFF7FF",
+    accent: "#071435",
     background: {
+      // white: "#071435",
       white: "#ffffff",
       light: "#f8f8f8",
     },
     white: {
-      regular: "#ffffff",
+      regular: "#071435",
+      // regular: "#ffffff",
       lessdark: "#faf9f8",
       dark: "#f6f6f6",
       darker: "#eeeeee",

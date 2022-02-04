@@ -14,6 +14,7 @@ import {
   Mobile,
   ActionsContainer,
 } from "./style"
+import logo from "../../../images/logo_black.png"
 
 const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
 
@@ -77,7 +78,7 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Finance
+               <img src={logo} width="130" />
               </AnchorLink>
             </Scrollspy>
           </Brand>
@@ -96,7 +97,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <button>Sign up</button>
+            <a href="https://bildnw.joinportal.com/"><button>Sign up</button></a>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>

@@ -3,45 +3,50 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
+// Shariah complaint
+// Fast
+// Simple
+// Cost-effective
+// Designed for MSME
+// Designed for construction
 const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <SectionTitle>We finance the materials, so you can get building.</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>Fast</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Initial on-boarding processed within 24hrs, financing approved in 2hrs.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Simple</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Submit a request. Materials delivered where you need them.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Shari'ah compliant</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Built from the ground up with Shari'ah compliance in mind.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Cost-effective</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            Up-front, flat pricing structure.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureTitle>Designed for MSMEs</FeatureTitle>
+          <FeatureText>Built for underserved businesses.</FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
+          <FeatureTitle>Built for contractors</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            Pioneering finance for the unique construction industry.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -51,10 +56,12 @@ const Features = () => (
 
 export default Features
 
-const StyledContainer = styled(Container)``
+const StyledContainer = styled(Container)`
+  color: ${props => props.theme.color.accent}
+`
 
 const SectionTitle = styled.h3`
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.secondary};
   display: flex;
   justify-content: center;
   margin: 0 auto 40px;
@@ -90,7 +97,7 @@ const FeatureItem = styled.div`
 `
 
 const FeatureTitle = styled.h4`
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.accent};
   letter-spacing: 0px;
   line-height: 30px;
   margin-bottom: 10px;
