@@ -97,7 +97,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <a href="https://bildnw.joinportal.com/"><button>Sign up</button></a>
+            <a href="https://portal.bildnw.com/login?step=signIn"><button>Sign up</button></a>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>
