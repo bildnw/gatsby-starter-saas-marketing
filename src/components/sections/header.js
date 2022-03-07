@@ -48,6 +48,7 @@ const Header = () => {
               <HeaderInput
                type="email"
                placeholder="Your email"
+               color="#098C8C"
                name="email"
                id="email"
                required
@@ -153,7 +154,7 @@ const FormSubtitleLink = styled(Link)`
 const HeaderInput = styled.input`
   font-weight: 500;
   font-size: 16px;
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.secondary};
   line-height: 42px;
   width: 100%;
   text-align: left;

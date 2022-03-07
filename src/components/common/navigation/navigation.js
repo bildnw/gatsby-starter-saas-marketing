@@ -82,7 +82,7 @@ export default class Navigation extends Component {
               </AnchorLink>
             </Scrollspy>
           </Brand>
-          <Mobile>
+          {/*<Mobile>
             <button
               onClick={this.toggleMobileMenu}
               style={{ color: "black", background: "none" }}
@@ -94,8 +94,8 @@ export default class Navigation extends Component {
               )}
             </button>
           </Mobile>
-
-          <Mobile hide>{this.getNavList({})}</Mobile>
+*/}
+          {/*<Mobile hide>{this.getNavList({})}</Mobile>*/}
           <ActionsContainer>
             <a href="https://portal.bildnw.com/login?step=signUp"><button>Sign up</button></a>
           </ActionsContainer>
