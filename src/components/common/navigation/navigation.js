@@ -16,7 +16,7 @@ import {
 } from "./style"
 import logo from "../../../images/logo_black.png"
 
-const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
+const NAV_ITEMS = ["", "", "", ""]
 
 export default class Navigation extends Component {
   state = {
@@ -97,7 +97,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <a href="https://portal.bildnw.com/login?step=signIn"><button>Sign up</button></a>
+            <a href="https://portal.bildnw.com/login?step=signUp"><button>Sign up</button></a>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>
