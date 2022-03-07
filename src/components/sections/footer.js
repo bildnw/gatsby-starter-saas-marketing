@@ -5,7 +5,7 @@ import { Container } from "../global"
 
 const Footer = () => (
   <FooterWrapper id="footer">
-    <FooterColumnContainer>
+{/*    <FooterColumnContainer>
       <FooterColumn>
         <span>Features</span>
         <ul>
@@ -35,7 +35,7 @@ const Footer = () => (
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
-    <BrandContainer>
+*/}    <BrandContainer>
       <Logo>bildnw</Logo>
     </BrandContainer>
   </FooterWrapper>
