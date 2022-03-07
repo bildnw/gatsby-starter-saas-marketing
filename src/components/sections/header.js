@@ -37,11 +37,28 @@ const Header = () => {
               We're building next-generation finance tools for the construction sector. Sign up to
               get early access.
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
+            <HeaderForm
+             name="early-access"
+             method="post"
+             data-netlify-honeypot="bot-field"
+             data-netlify="true"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="early-access" />
+              <HeaderInput
+               type="email"
+               placeholder="Your email"
+               name="email"
+               id="email"
+               required
+              />
+              <HeaderButton>Early access</HeaderButton>
+            </HeaderForm>
+            {/*<HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
               <HeaderButton>Early access</HeaderButton>
             </HeaderForm>
-            <FormSubtitle>
+*/}            <FormSubtitle>
               Already have a beta account?{" "}
               <FormSubtitleLink to="https://bildnw.joinportal.com/">Sign in</FormSubtitleLink>
             </FormSubtitle>
