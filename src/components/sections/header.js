@@ -4,6 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import { Container } from "../global"
+import {ActionsContainer, ActionsContainerMod} from "../common/navigation/style.js"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -37,29 +38,10 @@ const Header = () => {
               We're building next-generation finance tools for the construction sector. Sign up to
               get early access.
             </h2>
-            <HeaderForm
-             name="early-access"
-             method="post"
-             data-netlify-honeypot="bot-field"
-             data-netlify="true"
-            >
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="early-access" />
-              <HeaderInput
-               type="email"
-               placeholder="Your email"
-               color="#098C8C"
-               name="email"
-               id="email"
-               required
-              />
-              <HeaderButton>Early access</HeaderButton>
-            </HeaderForm>
-            {/*<HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
-            </HeaderForm>
-*/}            <FormSubtitle>
+            <ActionsContainerMod>
+              <a href="https://portal.bildnw.com/login?step=signUp"><button>Get early access</button></a>
+            </ActionsContainerMod>
+            <FormSubtitle>
               Already have a beta account?{" "}
               <FormSubtitleLink to="https://bildnw.joinportal.com/">Sign in</FormSubtitleLink>
             </FormSubtitle>
@@ -140,7 +122,7 @@ const HeaderForm = styled.form`
 `
 
 const FormSubtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
+  ${props => props.theme.font_size.xsmall}
 `
 
 const FormSubtitleLink = styled(Link)`

@@ -99,6 +99,23 @@ export const ActionsContainer = styled.div`
   }
 `
 
+export const ActionsContainerMod = styled.div`
+  display: flex;
+  align-items: center;
+  
+  button {
+    font-family: ${props => props.theme.font.normal};
+    ${props => props.theme.font_size.xsmall};
+    color: white;
+    background: #098b8c;
+    border-radius: 4px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+`
+
 export const Mobile = styled.div`
   display: none;
 
