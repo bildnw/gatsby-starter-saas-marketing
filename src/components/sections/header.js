@@ -28,14 +28,14 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>MSME Finance</Subtitle>
+            <Subtitle>Support for SMEs</Subtitle>
             <h1>
               Build now.
               <br />
               Pay later. 
             </h1>
             <h2>
-              We're building next-generation finance tools for the construction sector. Sign up to
+              We're building next-generation supply chain tools for the construction sector. Sign up to
               get early access.
             </h2>
             <ActionsContainerMod>

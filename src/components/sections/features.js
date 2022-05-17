@@ -13,7 +13,7 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>We finance the materials, so you can get building.</SectionTitle>
+      <SectionTitle>We get you the materials, so you can get building.</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>Fast</FeatureTitle>
@@ -46,7 +46,7 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Built for contractors</FeatureTitle>
           <FeatureText>
-            Pioneering finance for the unique construction industry.
+            Pioneering supply chain tools for the construction industry.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
