@@ -32,7 +32,7 @@ const Header = () => {
             <h1>
               Build now.
               <br />
-              Pay later. 
+              We take care of the rest. 
             </h1>
             <h2>
               We're building next-generation supply chain tools for the construction sector. Sign up to

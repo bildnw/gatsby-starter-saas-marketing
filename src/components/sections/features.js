@@ -18,7 +18,7 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Fast</FeatureTitle>
           <FeatureText>
-            Initial on-boarding processed within 24hrs, financing approved in 2hrs.
+            Initial on-boarding processed within 24hrs, materials request approved in 2hrs.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
@@ -28,9 +28,9 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Shari'ah compliant</FeatureTitle>
+          <FeatureTitle>Flexible</FeatureTitle>
           <FeatureText>
-            Built from the ground up with Shari'ah compliance in mind.
+            We work with your specific situation and needs.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
